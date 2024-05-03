@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "jetbrain";
+    src: "fonts/JetBrainsMono-Bold.ttf";
+}
+
+*{
+    font-family: "jetbrain";
+}
+
+body{
+    height: 100%;
+    width: 99%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+
+input,
+select{
+    padding: 11px;
+    margin-top: 5px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 20px;
+}
+
+input{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+select{
+    margin-top: 1px;
+    padding: 11.5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+button{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 39%;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+@keyframes gradient {
+    0%{
+        background-color: black;
+        color: white;
+    }
+
+    100%{
+        background-color: white;
+        color: black;
+    }
+}
+
+button:hover{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 39%;
+    animation: gradient 0.5s ease forwards;
+    cursor: pointer;
+}
